@@ -211,10 +211,9 @@ export function Home() {
                                     <th className="border border-zinc-800 p-2 w-[150px]">Posição</th>
                                     <th className="border border-zinc-800 p-2 w-[150px]">Ticker</th>
                                     <th className="border border-zinc-800 p-2">Cotação</th>
+                                    <th className="border border-zinc-800 p-2">DY</th>
                                     <th className="border border-zinc-800 p-2">P/L</th>
                                     <th className="border border-zinc-800 p-2">P/VP</th>
-                                    <th className="border border-zinc-800 p-2">ROE</th>
-                                    <th className="border border-zinc-800 p-2">DY</th>
                                     <th className="border border-zinc-800 p-2">EV/EBIT</th>
                                     <th className="border border-zinc-800 p-2">ROIC</th>
                                     <th className="border border-zinc-800 p-2">EY</th>
@@ -240,10 +239,9 @@ export function Home() {
                                                     {stock.tag}
                                                 </td>
                                                 <td className="border border-zinc-800 p-2">{stock.cotacao}</td>
+                                                <td className="border border-zinc-800 p-2">{dividendYield}</td>
                                                 <td className="border border-zinc-800 p-2">{stock.indicators["P/L"]}</td>
                                                 <td className="border border-zinc-800 p-2">{stock.indicators["P/VP"]}</td>
-                                                <td className="border border-zinc-800 p-2">{stock.indicators["ROE"]}</td>
-                                                <td className="border border-zinc-800 p-2">{dividendYield}</td>
                                                 <td className="border border-zinc-800 p-2">{stock.indicators["EV/EBIT"]}</td>
                                                 <td className="border border-zinc-800 p-2">{stock.indicators["ROIC"]}</td>
                                                 <td className="border border-zinc-800 p-2"> {(1 / parseFloat(stock.indicators["EV/EBIT"].replace(",", ".")) * 100).toFixed(1)}</td>
